@@ -1,0 +1,10 @@
+---
+
+# Ansible/Jenkins Test 
+
+- name: Execute
+  hosts: local
+  become: yes
+  roles: 
+    - execute-command
+  

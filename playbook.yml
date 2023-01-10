@@ -3,7 +3,7 @@
 # Ansible/Jenkins Test 
 
 - name: Execute
-  hosts: local
+  hosts: test
   become: yes
   roles: 
     - execute-command

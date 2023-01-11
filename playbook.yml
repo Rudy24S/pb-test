@@ -5,6 +5,8 @@
 - name: Execute
   hosts: test
   become: yes
+  vars:
+    - ip_address: ""
   roles: 
     - execute-command
   

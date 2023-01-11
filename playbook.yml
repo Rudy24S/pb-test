@@ -3,7 +3,7 @@
 # Ansible/Jenkins Test 
 
 - name: Execute
-  hosts: test
+  hosts: "{{ ip_add }}"
   become: yes
   vars_files:
     - "./vars/pb-vars.yml"

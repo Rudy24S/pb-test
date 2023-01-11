@@ -5,6 +5,8 @@
 - name: Execute
   hosts: test
   become: yes
+  vars_files:
+    - ".vars/pb-vars.yml"
   roles: 
     - execute-command
   

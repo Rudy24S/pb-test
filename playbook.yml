@@ -2,11 +2,9 @@
 
 # Ansible/Jenkins Test 
 
-- name: Execute
-  hosts: {{ ip_add }}
+- name: Replace File
+  hosts: test
   become: yes
-  vars_files:
-    - "./vars/pb-vars.yml"
   roles: 
     - execute-command
   

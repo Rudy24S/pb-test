@@ -2,9 +2,13 @@
 
 # Ansible/Jenkins Test 
 
-- name: Replace File
+- name: Elk Stack Deployment
   hosts: test
   become: yes
   roles: 
-    - replace-file
+    - java
+    - add-elastic-repo
+    - elasticsearch
+    - kibana
+    #- logstash
   
